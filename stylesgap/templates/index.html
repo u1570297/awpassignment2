@@ -1,0 +1,64 @@
+		{% load staticfiles %}
+		<section class="banner">
+			<h2 class="tagline">A style for every story</h2>
+	</section>
+	<div class="container">
+		<section class="heading">
+			<h2 class="title">Latest Design</h2>
+		</section>
+		<article class="latest_design">
+			{% for u in post %}
+			<a href="/blogdetail/{{ u.0 }}"><img src="{% static 'media/' %}/{{ u.3 }}" alt="{{ u.1 }}"></a>
+			{% endfor %}
+		</article>
+		<div class="clear"></div>
+		<section class="heading">
+			<h2 class="title">Recent Post</h2>
+		</section>
+
+		<section>
+			<article class="recent_post">
+				<div class="feature_img_odd">
+					<img src="{% static 'media/' %}/recent_post_1.jpg" alt="Recent Post 1">
+				</div>
+				<div class="post_detail_odd">
+					<h2>Latest Daniel Wellington fashion style 2016-2017</h2>
+					<hr>
+					<div class="post_description_odd">
+						<p>It was a coincidental meeting halfway around the world that sparked the idea for Daniel Wellington. On this trip, our founder Filip Tysander met an intriguing British gentleman with impeccable yet unpretentious style. The man had a particular fondness for wearing his vintage watches on old, weathered NATO straps. His name? Daniel Wellington. Inspired by his new acquaintance’s timeless style, Filip decided to create his own line of watches. Minimalistic and refined, the classic design with interchangeable straps truly has wide-ranging appeal. Now a few years later, this design is still an important part of what makes Daniel Wellington so special.Armani Exchange, born in 1991, targets a generation of fast-fashion consumers through an accessible collection offering urban, individual style. A|X Armani Exchange continues to define a new dress code with a collection that takes its cue from urban lifestyle and young culture. The youthful collection is now available at Prime Time Cambodia, bringing Italian design to young Khmers.</p>
+					</div>
+				</div>
+			</article>
+			<div class="clear"></div>
+
+			<article class="recent_post">
+				<div class="feature_img_odd f_even">
+					<img src="{% static 'media/' %}/recent_post_2.jpg" alt="Recent Post 2">
+				</div>
+				<div class="post_detail_odd d_even">
+					<h2>Latest winter style blazer 2016-2017</h2>
+					<hr>
+					<div class="post_description_odd">
+						<p> 
+							We have come a long way. We have had experiences that are reflected in the way we create fashion. We have made a note of everything we like: colours, materials, fabrics or images that help us to define the essence of FRC World - Forecast.  This is the result of our journey: a brand in constant evolution. A project that has become a reality, having grown from its beginnings to create a ‘total look’ with each new collection.  A brand that transcends its own limits to become a philosophy of life. The spirit of Forecast takes its inspiration from true stories full of diverse and stimulating experiences. It is the epitome of an intense, vibrant, nuanced life, in which bravery, courage and an authentic outlook form part of our DNA.Catering for the full spectrum of men’s apparel, Moda Gent welcomes more than 200 brands each season covering men’s casual, lifestyle and formal clothing, underwear and accessories.Moda Gent is this season's key trade platform for seeking out original, exciting and innovative product, a great area to pick up quirky niche labels.
+						</p>
+					</div>
+				</div>
+			</article>
+			<div class="clear"></div>
+
+			<article class="recent_post">
+				<div class="feature_img_odd">
+					<img src="{% static 'media/' %}/recent_post_3.jpg" alt="Recent Post 3">
+				</div>
+				<div class="post_detail_odd">
+					<h2>ChenOne New Arrivals of Stylish Gents Collection</h2>
+					<hr>
+					<div class="post_description_odd">
+						<p>It was a coincidental meeting halfway around the world that sparked the idea for Daniel Wellington. On this trip, our founder Filip Tysander met an intriguing British gentleman with impeccable yet unpretentious style. The man had a particular fondness for wearing his vintage watches on old, weathered NATO straps. His name? Daniel Wellington. Inspired by his new acquaintance’s timeless style, Filip decided to create his own line of watches. Minimalistic and refined, the classic design with interchangeable straps truly has wide-ranging appeal. Now a few years later, this design is still an important part of what makes Daniel Wellington so special.Armani Exchange, born in 1991, targets a generation of fast-fashion consumers through an accessible collection offering urban, individual style. A|X Armani Exchange continues to define a new dress code with a collection that takes its cue from urban lifestyle and young culture. The youthful collection is now available at Prime Time Cambodia, bringing Italian design to young Khmers.</p>
+					</div>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+	</div>

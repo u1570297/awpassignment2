@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load staticfiles %}
+	<title>StyleGap</title>
+	<link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="logo">
+				<a href="/"><h1>StylesGap</h1></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/blog/">Blog</a></li>
+					<li id="category"><a href="#">Category</a>
+						<ul class="sub-menu">
+							{% for u in record %}
+							<li><a href="/catpost/{{ u.0 }}">{{ u.1 }}</a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li><a href="/contact/">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>

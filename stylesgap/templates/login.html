@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+
+<!--stylesheet-->
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+</head>
+<body>
+<header>
+    <div class="container">
+      <div id="logo">
+        <a href=""><h1>StylesGap</h1></a>
+      </div>
+    </div>
+  </header>
+<div class="wrapper">
+<div class="row write-comment" style="width: 100%">
+ 	 <h2></h2>
+        <form role="form" method="post" action="">
+
+          <fieldset>
+            
+            <!--*** INPUT USERNAME ***-->
+           <legend><label>Login</label></legend>
+           <!-- <?php if(isset($msg)) {?>
+           <label>Check your email or Password</label>
+           <?php } ?> -->
+           <label>Admin Email</label><br>
+              <input placeholder="Email" name="admin_name" type="text" required autofocus>
+           
+            <!--*** / INPUT USERNAME ***--> 
+            
+            
+            <!--*** INPUT PASSWORD ***-->
+           <label>Password</label>
+              <input placeholder="PASSWORD" name="password" type="password" required value="">
+           
+            <!--*** / INPUT PASSWORD ***-->
+            
+            <br /><br />
+            <input type="submit" name="submit" value="LOGIN" class="read_more" style="float: left">
+          </fieldset>
+        </form>
+      </div>
+      
+  </div>    
+  
+</body>
+</html>

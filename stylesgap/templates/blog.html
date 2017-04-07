@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<section class="banner">
+	<h2 class="tagline">Latest Design</h2>
+</section>
+<div class="container">
+	{% if post %}
+	{% for u in post %}
+	<section class="blog">
+		<article class="blog_post">
+			<h2>{{ u.1 }}</h2>
+			<hr>
+			<img src="{% static 'media/' %}/{{ u.3 }}" alt="{{ u.1 }}" />
+			<p>{{ u.2|truncatechars:200 }}</p>
+			<a href="/blogdetail/{{ u.0 }}" class="read_more">Read more</a>
+		</article>
+		{% endfor %}
+
+		{% else %}
+			<h2 style="text-align: center;">no record found</h2>
+		{% endif %}
+		
+
+	</section>
+</div>
+<div class="clear"></div>

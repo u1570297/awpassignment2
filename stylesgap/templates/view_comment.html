@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <h4></h4>
+  <div class="form_control" style="  padding: 0px 0px 10px 0px">
+    <fieldset>
+
+      <legend><label>View Comments</label></legend>
+
+      <table width="100%" style="text-align:center;">
+        <tr>
+          <td><label>Id</label></td>
+          <td><label>Name</label></td>
+          <td><label>Email</label></td>
+          <td><label>Comment</label></td>
+        </tr>
+        {% for comment in record %}
+          <tr>	
+            <td><label>{{ comment.0 }}</label></td>
+            <td><label>{{ comment.1 }}</label></td>
+            <td><label>{{ comment.2 }}</label></td>
+            <td><label>{{ comment.3 }}</label></td>
+          </tr>
+        {% endfor %}
+      </table>
+    </fieldset>
+  </div>
+</div>
+</body>
+</html>

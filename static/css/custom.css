@@ -1,0 +1,357 @@
+@font-face{
+	font-family: Roboto-Light;
+	src:url(../font/Roboto-Light.ttf);
+}
+@font-face{
+    font-family: Libel-Suit-Rg;
+    src:url(../font/Libel-Suit-Rg.ttf);
+}
+body{
+	margin:0;
+	background:#f0f0f0;
+}
+.container{
+	width: 1190px;
+	margin: 0 auto;
+}
+header{
+	height: 60px;
+	width: 100%;
+	background: linear-gradient(29deg, #361752, #b1b1b1);
+    box-shadow: 0 4px 9px 3px #ccc;
+}
+#logo{
+	float: left;
+	width: 300px;
+	color: white;
+}
+#logo a{
+    color: white;
+    text-decoration: none;
+}
+#logo h1{
+	margin-top: 10px;
+    margin-bottom: 0;
+}
+nav{
+    float: right;
+    width: 400px;
+}
+nav ul{
+	padding-top: 5px;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+    font-family: Roboto-Light;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin: 0 15px;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+	color: #000;
+}
+.banner{
+	padding: 118px 0 206px;
+    height: 0px;
+    width: 100%;
+    background: linear-gradient(328deg, #361752, #B31B67);
+}
+.banner .tagline{
+	margin: 0 auto;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: -mos-fit-content;
+    padding: 15px;
+    color: white;
+    border: 3px solid;
+    font-family: roboto-light;
+    font-size: 43px;
+    border-radius: 18px;
+    text-align: center;
+    min-width: 425px;
+}
+.heading{
+    background-image: url('../media/stripe.png');
+}
+.title{
+    text-align: center;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: roboto-light;
+    font-size: 30px;
+    padding: 0 50px;
+    background: #f0f0f0;
+}
+.latest_design img{
+    float: left;
+    width: 238px;
+    height: 300px;
+}
+.latest_design img:last-child{
+    margin-right: 0px;
+}
+
+.clear{
+    clear: both;
+}
+
+.recent_post{
+    height: 515px;
+    margin-bottom: 20px;
+}
+.feature_img_odd{
+    float: left;
+    width: 500px;
+    height: 479px;
+}
+.feature_img_odd img{
+    height: 100%;
+    width: 100%;
+}
+.post_detail_odd{
+    float: right;
+    width: 610px;
+    height: 479px;
+    overflow: hidden;
+}
+.post_detail_odd h2{
+    font-family: libel-suit-rg;
+    font-size: 33px;
+    margin: 0;
+    margin-top: -5px;
+}
+.post_description_odd{
+    font-family: roboto-light;
+    line-height: 1.8em;
+    text-align: justify;
+}
+.f_even{
+    float: right;
+}
+.d_even{
+    float: left;
+}
+footer{
+    background-image: url('../media/footer_bg.jpg');
+    height: 390px;
+    width: 100%;
+    color: #a2a2a2;
+}
+footer hr{
+    border-color: #424242;
+}
+.ft_about{
+    float: left;
+    width: 800px;
+}
+.ft_title{
+    font-family: roboto-light;
+    font-size: 30px;
+}
+.ft_menu, .ft_recent_post{
+    width: 340px;
+    float: left;
+    min-height: 329px;
+    margin: 0 50px;
+    margin-right: 0;
+}
+.ft_menu article ul li, .ft_recent_post article ul li, aside article ul li{
+    list-style-type: none;
+    padding: 10px 0px;
+}
+.ft_menu article ul li a, .ft_recent_post article ul li a, aside article ul li a{
+    text-decoration: none;
+    color: #a2a2a2;
+    font-family: roboto-light;
+}
+.ft_menu article ul li a:hover, .ft_recent_post article ul li a:hover, aside article ul li a:hover{
+    color: #ccc;
+}
+.copyright{
+    font-family: libel-suit-rg;
+    text-align: center;
+}
+.blog_post{
+    width: 368px;
+    background: #fff;
+    padding: 10px;
+    margin-left: 4px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    margin-bottom: 4px;
+}
+.blog_post h2, aside h2{
+    font-family: libel-suit-rg;
+    margin-top: 0px;
+}
+.blog_post img{
+    width: 100%;
+    margin-top: 15px;
+    height: 167px;
+}
+.blog_post p{
+    font-family: roboto-light;
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1.7em;
+    word-spacing: 5px;
+}
+.read_more{
+    float: right;
+    padding: 5px;
+    background: #3d3c3c;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+.read_more:hover{
+    color: #d8d8d8;
+}
+hr{
+    border-color: #fff;
+}
+.blog_detail{
+    width: 800px;
+    float: left;
+}
+.blog_detail img{
+    height: 100%;
+    width: 100%;
+}
+.blog_detail p{
+    font-family: roboto-light;
+    line-height: 1.5em;
+    text-align: justify;
+    word-wrap: normal;
+    word-spacing: 4px;
+}
+aside{
+    float: right;
+    width: 350px;
+}
+aside h2{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.blog_detail{
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+aside{
+    margin-top: 20px;
+}
+.sidebar_post, .sidebar_menu{
+    background: #fff;
+    padding: 10px;
+}
+aside article{
+    margin-bottom: 20px;
+}
+aside article ul li a{
+    color:  #3c3b3b;
+}
+.contact{
+    background-image: url('../media/contact_us_bg.png');
+    background-size: 100%;
+    padding: 44px 0 29px;
+}
+.flag{
+    float: left;
+    width: 550px;
+    min-height: 300px;
+}
+.flag img{
+    border-radius: 160px;
+    width: 300px;
+    height: 300px;
+}
+.contact_detail {
+    font-family: roboto-light;
+    font-size: 20px;
+}
+.contact_detail td{
+    padding:10px;
+}
+.contact_detail img{
+ height: 50px;
+ width: 50px;
+}
+.sub-menu{
+    display: none;
+}
+#category{
+    padding: 24px 0px;
+
+}
+#category:hover{
+    color: #000;
+}
+#category:hover .sub-menu{
+    display: block;
+} 
+.sub-menu{
+    padding: 15px;
+    width: 135px;
+    height: auto;
+    background: #6d5b7c;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.sub-menu li a{
+    margin-left: 35px;
+    line-height: 25px;
+}
+
+.comment, .write-comment{
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 800px;
+    float: left;
+}
+.comment h3, .comment p, .write-comment h3{
+    line-height: 1.6em;
+    font-family: roboto-light;
+    text-align: justify;
+}
+.comment-hr{
+    opacity: 0.2;
+}
+.write-comment input, .write-comment textarea, .write-comment select{
+    width: 97.5%;
+    margin: 10px 0px 20px;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: roboto-light;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+label{
+    font-family: roboto-light;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+.comment-title{
+    margin-bottom: 0px;
+    text-align: center !important;
+}
+.write-comment input[type="submit"]{
+    width: 100%;
+    color: #fff;
+    background: #3d3c3c;
+    transition: 0.5s;
+}
+.write-comment input[type="submit"]:hover{
+    color: #cecece;
+}

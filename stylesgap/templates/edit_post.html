@@ -1,0 +1,46 @@
+  {% load staticfiles %}
+  <div class="wrapper">
+    <div class="form_control write-comment">
+     <h4></h4>
+     <fieldset>
+      <legend><label>Edit Post</label></legend>
+
+      <!--	FORM	-->
+      <form action="" method="post" enctype="multipart/form-data">
+
+        <label>Post Title</label>
+        <input type="text" name="p_name" value="{{ record.1 }}" />
+
+        <label>Post Category</label>
+        <select name="p_catid"> 
+          {% for cat in category %}
+          {% if cat.0 == record.4 %}
+            <option value="{{ cat.0 }}">{{ cat.1 }}</option>
+            {% endif %}
+          }
+          {% endfor %}
+
+          {% for cat in category %}
+          {% if cat.0 != record.4 %}
+            <option value="{{ cat.0 }}">{{ cat.1 }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+        <label>Description</label>
+        <textarea name="p_desc">{{ record.2 }}</textarea>
+
+        <p>Image</p>
+        <img src="{% static 'media/' %}/{{ record.3 }}" alt="" height="150" width="150">
+        <input type="file" name="myfile"/>
+        <br /><br />
+
+        <input type="submit" name="submit" value="SUBMIT" class="read_more" />
+      </form>
+    </fieldset>
+  </div>
+
+
+</div>
+
+</body>
+</html>

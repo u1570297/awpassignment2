@@ -1,0 +1,43 @@
+  {% load staticfiles %}
+
+<div class="wrapper">
+  <h4></h4>
+  <div class="form_control" style="  padding: 0px 0px 10px 0px">
+    <fieldset>
+
+     <legend><label>View Product</label></legend>
+
+     <table width="100%" style="text-align:center;">
+      <tr>
+        <td><label>#</label></td>
+        <td><label>Title</label></td>
+        <td><label>Description</label></td>
+        <td><label>Category</label></td>
+        <td><label>Image</label></td>
+        <td><label>Edit</label></td>
+        <td><label>Delete</label></td>
+      </tr>
+      {% for u in record %}
+      <tr>	
+       <td><label>{{ u.0 }}</label></td>
+       <td><label>{{ u.1 }}</label></td>
+       <td><label>{{ u.2 }}</label></td>
+       <td><label>{{ u.5 }}</label></td>
+       <td><label>
+         <img src="{% static 'media/' %}/{{ u.3 }}" alt="" height="150" width="150">
+       </label></td>
+       <!--EDIT-->                        
+       <td><label><a href="/edit_post/{{ u.0 }}"><input type="submit" name="edit" class="read_more" style="float: none;" value="EDIT" /></a></label></td>
+       <!--DELETE-->
+       <td><label><a href="/delete_post/{{ u.0 }}"><input type="submit" name="delete" class="readmore" value="DELETE" /></a></label></td>
+     </tr>
+     {% endfor %}
+
+   </table>
+
+ </fieldset>
+</div>
+</div>
+</body>
+
+</html>

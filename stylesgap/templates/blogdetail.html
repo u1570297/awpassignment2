@@ -1,0 +1,67 @@
+  {% load staticfiles %}
+  <section class="banner">
+  	<h2 class="tagline">{{ detail.1 }}</h2>
+  </section>
+  <div class="container">
+  	<section class="blog_detail">
+  		<img src="{% static 'media/' %}/{{ detail.3 }}" alt="post 1" />
+  		<p>{{ detail.2 }}</p>
+  	</section>
+  	<aside>
+  		<article class="sidebar_post">
+  			<h2>Recent Post</h2>
+  			<hr>
+  			<article>
+  				<ul>
+  					{% for i in recent %}
+  					<li><a href="/blogdetail/{{ i.0 }}">{{ i.1 }}</a></li>
+  					{% endfor %}
+  				</ul>
+  			</article>
+  		</article>
+  		<article class="sidebar_menu">
+  			<h2>Menu</h2>
+  			<hr>
+  			<article>
+  				<ul>
+  					<li><a href="/">Home</a></li>
+  					<li><a href="/blog/">Blog</a></li>
+  					<li><a href="/contact/">Contact Us</a></li>
+  				</ul>
+  			</article>
+  		</article>
+  	</aside>
+  </div>
+  <div class="clear"></div>
+  <div class="container">
+  	<section class="comment">
+  		<h3 class="comment-title">Recent Comment</h3>
+  		<hr>
+  		{% for c in comment %}
+
+  		<article>
+  			<h3>{{ c.2 }}</h3>
+  			<p>{{ c.3 }}</p>
+  		</article>
+  		<hr class="comment-hr">
+  		{% endfor %}
+  	</section>
+
+  	<div class="clear"></div>
+  	<section class="write-comment">
+  		<form action="" method="post">
+  			<article>
+  				<h3 class="comment-title">Write a Comment</h3>
+  				<hr>
+  				<label for="name">Full Name</label>
+  				<input type="text" name="c_name" id="name" placeholder="Enter your full name" />
+  				<label for="email">Email</label>
+  				<input type="text" name="c_email" id="email" placeholder="Enter your email" />
+  				<label for="comment">Comment</label>
+  				<textarea id="comment" name="c_comment" rows="10" cols="5" placeholder="Enter your comment"></textarea>
+  				<input type="submit" name="submit" value="Submit" />
+  			</article>
+  		</form>
+  	</section>
+  </div>
+  <div class="clear"></div>

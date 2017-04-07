@@ -1,0 +1,30 @@
+<div class="wrapper">
+ <div class="form_control" style="  padding: 0px 0px 10px 0px">
+  <h4></h4>
+  <fieldset>
+  <legend><label>View Category</label></legend>
+   <table width="100%" style="text-align:center;">
+    <tr>
+      <td><label>Id</label></td>
+      <td><label>Name</label></td>
+      <td><label>Edit</label></td>
+      <td><label>Delete</label></td>
+    </tr>
+    {% for u in record %}
+      <tr>	
+       <td><label>{{ u.0 }}</label></td>
+       <td><label>{{ u.1 }} </label></td>
+       <!--EDIT-->                        
+       <td><label><a href="/edit_category/{{ u.0 }}"><input type="submit" name="edit" class="read_more" style="float:none;" value="EDIT" /></label></a></td>
+       <!--DELETE-->
+       <td><label><a href="/delete_category/{{ u.0 }}"><input type="submit" name="delete" class="readmore" value="DELETE" /></label></a></td>
+     </tr>
+   {% endfor %}
+ </table>
+
+</fieldset>
+</div>
+</div>
+</body>
+
+</html>
